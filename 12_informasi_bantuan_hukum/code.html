@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "tertiary-fixed": "#a7f3c8", "on-tertiary-fixed-variant": "#005234", "background": "#f2fbff", "primary": "#045357", "outline": "#6f7979", "on-primary": "#ffffff", "surface-container-highest": "#d8e4ea", "on-background": "#121d21", "on-secondary-container": "#721604", "inverse-on-surface": "#e7f3f8", "surface-dim": "#d0dce1", "on-tertiary-container": "#a3efc4", "tertiary": "#005637", "on-secondary-fixed-variant": "#852410", "secondary-container": "#fe7d61", "outline-variant": "#bfc8c9", "surface-container-lowest": "#ffffff", "tertiary-fixed-dim": "#8bd6ad", "tertiary-container": "#226f4d", "inverse-surface": "#273236", "surface-container-high": "#deeaef", "on-error-container": "#93000a", "surface-container-low": "#eaf6fb", "secondary-fixed": "#ffdad3", "primary-fixed-dim": "#93d1d5", "surface-bright": "#f2fbff", "primary-fixed": "#aeeef2", "on-secondary": "#ffffff", "on-primary-fixed-variant": "#004f53", "on-surface-variant": "#3f4849", "surface-variant": "#d8e4ea", "on-primary-fixed": "#002022", "on-tertiary-fixed": "#002112", "on-tertiary": "#ffffff", "on-surface": "#121d21", "surface": "#f2fbff", "secondary-fixed-dim": "#ffb4a4", "primary-container": "#2a6b6f", "error-container": "#ffdad6", "on-error": "#ffffff", "surface-container": "#e4f0f5", "surface-tint": "#26676b", "inverse-primary": "#93d1d5", "on-primary-container": "#aae9ed", "on-secondary-fixed": "#3e0500", "error": "#ba1a1a", "secondary": "#a53b25" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-sm": "0.5rem", "space-md": "1rem", "gutter": "1rem", "space-lg": "1.25rem", "margin": "1.25rem", "space-xl": "1.5rem" }, fontFamily: { "headline-lg": ["Plus Jakarta Sans"], "caption": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"] }, fontSize: { "headline-lg": ["24px", { "lineHeight": "32px", "fontWeight": "700" }], "caption": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "title-md": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "18px", "fontWeight": "500" }], "display-lg": ["30px", { "lineHeight": "38px", "fontWeight": "700" }], "body-md": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-space-md flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm flex-1 min-w-0"><button aria-label="Kembali" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container active:scale-95 transition-all" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-title-md text-title-md text-on-surface truncate">Informasi Bantuan Hukum</h1></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Simpan Bookmark" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container hover:text-primary active:scale-95 transition-all"><span class="material-symbols-outlined text-[22px]">bookmark</span></button><a aria-label="Keluar Cepat" class="h-11 px-space-md flex items-center gap-space-xs rounded-full bg-surface-container-lowest text-secondary shadow-[0_1px_4px_rgba(0,0,0,0.06)] hover:bg-secondary-fixed active:scale-95 transition-all" href="https://www.google.com" rel="noreferrer"><span class="material-symbols-outlined text-[18px]">logout</span><span class="font-label-md text-label-md text-secondary">Keluar Cepat</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface px-margin"><div class="flex flex-col w-full pb-6 space-y-space-lg">
+<!-- Interactive Bookmark Notification Toast (Hidden by default) -->
+<div class="fixed top-20 inset-x-margin z-50 transform -translate-y-6 opacity-0 pointer-events-none transition-all duration-300 flex items-center gap-space-sm p-space-md bg-inverse-surface text-inverse-on-surface rounded-xl shadow-lg" id="toast-bookmark">
+<span class="material-symbols-outlined text-[20px] text-tertiary-fixed" style="font-variation-settings: 'FILL' 1;">bookmark_added</span>
+<span class="font-label-md text-label-md">Tersimpan ke daftar bacaan privat (Layar 15)</span>
+</div>
+<!-- Subtitle & Context Intro -->
+<section class="flex flex-col gap-space-xs pt-space-xs">
+<div class="inline-flex items-center gap-1.5 self-start px-space-sm py-1 rounded-full bg-surface-container-high">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-label-md text-caption text-primary">Edukasi &amp; Hak Hukum</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-space-xs">Pahami Hak &amp; Akses Bantuan Hukum</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+      Informasi dasar dan praktis mengenai apa itu bantuan hukum, bentuk pendampingan yang tersedia, dan bagaimana cara memulainya secara aman tanpa rasa takut.
+    </p>
+</section>
+<!-- Visual Storytelling Placeholder (Gentle Supportive Imagery) -->
+<div class="relative w-full h-36 rounded-xl overflow-hidden bg-surface-container shadow-sm">
+<img class="w-full h-full object-cover opacity-90" data-alt="A peaceful indoor scene with warm morning sunlight falling over a wooden desk with a notebook, safe tea cup, and small green indoor plant, minimalist humanist aesthetic, soft teal and warm ivory atmosphere, comforting and calm." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpYAU4BjpdENehkmzXvgElJMhoP6sHQN3OOdsCVcPiAcb93PJKTgxPJf54c3D17xdnyvjN8hTSuG9Oiimt8i9pyBN3EJMbPdTrAPNLbx9812kz-S-d9WtafzCOPeTTgXLzhYg77YmP3xIhllZyc5dYvLy3JPK0megoHmocmAEAhSkO7Np7rhW6DWiAPiamHi8JdYRiIreoA-9NYxt8d2Y2OIn3wzuZz9WiF4DBXsg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent"></div>
+<div class="absolute bottom-2.5 left-space-md right-space-md flex items-center justify-between text-on-primary text-caption font-label-md">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">verified_user</span> Ruang Terlindungi
+      </span>
+<span class="opacity-90">Waktu baca ~3 menit</span>
+</div>
+</div>
+<!-- Disclaimer Edukatif & Rasa Aman (Notice Card) -->
+<section class="rounded-xl p-space-md bg-surface-container-low flex items-start gap-space-sm shadow-sm">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px] text-primary" style="font-variation-settings: 'FILL' 1;">shield_with_heart</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<h3 class="font-label-lg text-label-lg text-primary">Prinsip Kendali Penuh</h3>
+<p class="font-caption text-caption text-on-surface-variant leading-relaxed">
+        Informasi ini bersifat panduan edukasi awal untuk membantumu memahami hak dasar, bukan pengganti nasihat hukum formal dari advokat. Kamu memegang kendali penuh atas setiap keputusan.
+      </p>
+</div>
+</section>
+<!-- Section A: "Mengenal Bantuan Hukum" -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[22px] text-primary">help_outline</span>
+<h3 class="font-title-md text-title-md text-on-surface">Apa itu Bantuan Hukum?</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+      Bantuan hukum adalah layanan dan pendampingan resmi yang diberikan oleh advokat atau Lembaga Bantuan Hukum (LBH) terakreditasi kepada masyarakat pencari keadilan, khususnya korban kekerasan, untuk melindungi hak-hak hukumnya selama proses penanganan masalah.
+    </p>
+<div class="mt-space-xs p-space-sm rounded-lg bg-surface-container-high flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-md text-caption text-on-surface">Berorientasi murni pada pemulihan martabat dan keselamatan korban.</span>
+</div>
+</section>
+<!-- Section B: "Bentuk Bantuan yang Tersedia" -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-on-surface">Bentuk Bantuan yang Tersedia</h3>
+<span class="font-caption text-caption text-on-surface-variant">3 Pilihan Layanan</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px] text-primary">chat</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-label-lg text-label-lg text-on-surface">Konsultasi &amp; Informasi Hukum</h4>
+<span class="font-caption text-caption text-outline">Tahap Awal &amp; Evaluasi</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 leading-relaxed">
+          Tanya jawab aman mengenai duduk perkara, penilaian risiko pribadi, pemahaman bukti awal, serta opsi hukum yang tepat diambil tanpa paksaan melapor.
+        </p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px] text-tertiary">volunteer_activism</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-label-lg text-label-lg text-on-surface">Pendampingan Non-Litigasi</h4>
+<span class="font-caption text-caption text-outline">Di Luar Jalur Sidang</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 leading-relaxed">
+          Mediasi berkeadilan terarah, penghubung dengan konseling psikososial, bantuan perlindungan identitas, serta pemulihan hak administratif kependudukan.
+        </p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px] text-primary">gavel</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-label-lg text-label-lg text-on-surface">Pendampingan Litigasi</h4>
+<span class="font-caption text-caption text-outline">Proses Hukum Resmi</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 leading-relaxed">
+          Pendampingan langsung oleh advokat berizin dalam penyusunan laporan polisi (BAP), pemeriksaan penyidikan kepolisian, hingga perlindungan di ruang pengadilan.
+        </p>
+</div>
+</div>
+</section>
+<!-- Section C: "Hak Mendapatkan Bantuan Cuma-cuma (Pro Bono)" -->
+<section class="bg-tertiary-fixed/40 rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[22px] text-tertiary" style="font-variation-settings: 'FILL' 1;">monetization_on</span>
+<h3 class="font-title-md text-title-md text-on-tertiary-fixed-variant">Bantuan Bebas Biaya (Pro Bono)</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+      Korban kekerasan dan penyintas berhak atas bantuan hukum cuma-cuma yang dijamin oleh negara (UU No. 16 Tahun 2011) melalui LBH dan Organisasi Bantuan Hukum (OBH) terakreditasi.
+    </p>
+<div class="flex items-center gap-2 mt-1 font-label-md text-caption text-on-tertiary-fixed-variant">
+<span class="material-symbols-outlined text-[16px]">health_and_safety</span>
+<span>Tidak ada pungutan liar untuk pendampingan resmi terverifikasi.</span>
+</div>
+</section>
+<!-- Section D: "Langkah Mempersiapkan Diri" -->
+<section class="flex flex-col gap-space-sm">
+<h3 class="font-title-md text-title-md text-on-surface">Langkah Mempersiapkan Diri</h3>
+<div class="flex flex-col gap-space-xs">
+<!-- Card Link 1 -->
+<a class="group bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between transition-all active:scale-[0.99]" href="#">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px] text-primary">fact_check</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Panduan Langkah Awal</span>
+<span class="font-caption text-caption text-on-surface-variant truncate">Baca panduan bertahap sebelum berkonsultasi</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[20px] text-outline group-hover:text-primary transition-colors">chevron_right</span>
+</a>
+<!-- Card Link 2 -->
+<a class="group bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between transition-all active:scale-[0.99]" href="#">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px] text-primary">account_balance</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Kenali Hak Korban (Layar 13)</span>
+<span class="font-caption text-caption text-on-surface-variant truncate">Pelajari hak-hak mendasar dalam sistem hukum</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[20px] text-outline group-hover:text-primary transition-colors">chevron_right</span>
+</a>
+</div>
+</section>
+<!-- Interactive Action Box / CTA (FR-06, FR-12, US-17) -->
+<section class="flex flex-col gap-space-sm pt-space-xs">
+<button class="w-full h-[52px] rounded-[14px] bg-primary text-on-primary font-label-lg text-label-lg shadow-sm flex items-center justify-center gap-2 hover:bg-primary/95 active:scale-[0.98] transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">search</span>
+<span>Cari Layanan Bantuan Hukum (K1)</span>
+</button>
+<button class="w-full h-[50px] rounded-[14px] bg-surface-container text-primary font-label-lg text-label-lg flex items-center justify-center gap-1.5 hover:bg-surface-container-high active:scale-[0.98] transition-all" type="button">
+<span>Buka Kenali Hak Korban</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</section>
+<!-- Privacy & Zero Trace Footer Note (US-16) -->
+<div class="flex items-center justify-center gap-1.5 py-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-outline">lock</span>
+<span class="font-caption text-caption">Materi ini tersimpan secara privat di perangkatmu tanpa akun.</span>
+</div>
+</div>
+<script>
+  // Dynamic bookmark simulation for delight
+  const bookmarkBtn = document.querySelector('button[aria-label="Simpan Bookmark"]');
+  const toast = document.getElementById('toast-bookmark');
+  let isBookmarked = false;
+
+  if (bookmarkBtn && toast) {
+    bookmarkBtn.addEventListener('click', () => {
+      isBookmarked = !isBookmarked;
+      const icon = bookmarkBtn.querySelector('span');
+      if (icon) {
+        if (isBookmarked) {
+          icon.style.fontVariationSettings = "'FILL' 1";
+          icon.classList.add('text-primary');
+          toast.classList.remove('opacity-0', '-translate-y-6', 'pointer-events-none');
+          toast.classList.add('opacity-100', 'translate-y-0');
+          setTimeout(() => {
+            toast.classList.remove('opacity-100', 'translate-y-0');
+            toast.classList.add('opacity-0', '-translate-y-6', 'pointer-events-none');
+          }, 2400);
+        } else {
+          icon.style.fontVariationSettings = "'FILL' 0";
+          icon.classList.remove('text-primary');
+        }
+      }
+    });
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-label-lg"><div class="flex justify-around items-center h-16 px-space-sm"><a class="flex flex-col items-center justify-center min-w-[64px] h-12 gap-0.5 text-on-surface-variant hover:text-primary transition-all" data-path="beranda" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-caption text-caption">Beranda</span></a><a class="flex flex-col items-center justify-center min-w-[64px] h-12 gap-0.5 text-on-surface-variant hover:text-primary transition-all" data-path="bantuan" href="#"><span class="material-symbols-outlined text-[24px]">support_agent</span><span class="font-caption text-caption">Bantuan</span></a><a class="flex flex-col items-center justify-center min-w-[64px] h-12 gap-0.5 text-on-surface-variant hover:text-primary transition-all" data-path="layanan" href="#"><span class="material-symbols-outlined text-[24px]">grid_view</span><span class="font-caption text-caption">Layanan</span></a><a class="flex flex-col items-center justify-center min-w-[64px] h-12 gap-0.5 text-on-surface-variant hover:text-primary transition-all" data-path="profil" href="#"><span class="material-symbols-outlined text-[24px]">person</span><span class="font-caption text-caption">Profil</span></a></div></nav></body></html>

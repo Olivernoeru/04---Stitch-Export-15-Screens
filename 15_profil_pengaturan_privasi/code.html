@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>Ruang Aman</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-low": "#eaf6fb", "on-primary": "#ffffff", "surface-container-high": "#deeaef", "on-tertiary-fixed": "#002112", "inverse-surface": "#273236", "on-tertiary": "#ffffff", "on-secondary-fixed": "#3e0500", "on-primary-container": "#aae9ed", "primary-fixed-dim": "#93d1d5", "outline-variant": "#bfc8c9", "background": "#f2fbff", "tertiary": "#005637", "secondary-fixed-dim": "#ffb4a4", "primary-fixed": "#aeeef2", "on-secondary-container": "#721604", "surface": "#f2fbff", "tertiary-fixed": "#a7f3c8", "primary-container": "#2a6b6f", "surface-container": "#e4f0f5", "surface-container-lowest": "#ffffff", "error": "#ba1a1a", "on-surface-variant": "#3f4849", "on-primary-fixed-variant": "#004f53", "on-secondary-fixed-variant": "#852410", "surface-container-highest": "#d8e4ea", "surface-dim": "#d0dce1", "on-surface": "#121d21", "on-secondary": "#ffffff", "inverse-primary": "#93d1d5", "on-error-container": "#93000a", "on-tertiary-fixed-variant": "#005234", "tertiary-fixed-dim": "#8bd6ad", "tertiary-container": "#226f4d", "on-error": "#ffffff", "error-container": "#ffdad6", "on-tertiary-container": "#a3efc4", "outline": "#6f7979", "secondary": "#a53b25", "surface-tint": "#26676b", "surface-bright": "#f2fbff", "surface-variant": "#d8e4ea", "secondary-container": "#fe7d61", "on-primary-fixed": "#002022", "inverse-on-surface": "#e7f3f8", "on-background": "#121d21", "secondary-fixed": "#ffdad3", "primary": "#045357" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-md": "1rem", "space-xs": "0.25rem", "margin": "1.25rem", "space-lg": "1.25rem", "space-sm": "0.5rem", "space-xl": "1.5rem", "gutter": "1rem" }, fontFamily: { "headline-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "caption": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"] }, fontSize: { "headline-md": ["20px", { lineHeight: "28px", fontWeight: "600" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "title-md": ["18px", { lineHeight: "24px", fontWeight: "600" }], "caption": ["12px", { lineHeight: "16px", fontWeight: "400" }], "label-lg": ["14px", { lineHeight: "20px", fontWeight: "600" }], "label-md": ["13px", { lineHeight: "18px", fontWeight: "500" }], "body-md": ["15px", { lineHeight: "22px", fontWeight: "400" }], "display-lg": ["30px", { lineHeight: "38px", fontWeight: "700" }], "headline-lg": ["24px", { lineHeight: "32px", fontWeight: "700" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#f2fbff;color:#121d21;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs min-w-0 flex-1"><button aria-label="Kembali" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container-low transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-title-md text-title-md text-on-surface truncate">Kenali Hakmu</h1></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Simpan Penanda" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" type="button"><span class="material-symbols-outlined text-[24px]">bookmark</span></button><button aria-label="Keluar Cepat" class="h-11 px-space-md rounded-full bg-secondary text-on-secondary font-label-lg text-label-lg flex items-center gap-space-xs shadow-[0_2px_8px_rgba(165,59,37,0.25)] hover:opacity-95 active:scale-95 transition-all" onclick="window.location.replace('https://www.google.com')" type="button"><span class="material-symbols-outlined text-[18px]">logout</span><span>Keluar Cepat</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Screen Context / Intro Header -->
+<section class="px-margin pt-space-md pb-space-lg flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex-1 min-w-0">
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Profil &amp; Pengaturan</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+          Atur pengalaman penggunaan dan temukan kembali informasi yang telah kamu simpan.
+        </p>
+</div>
+</div>
+<!-- Anonymous Mode Safety Banner -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm mt-space-xs flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center shrink-0 text-on-primary-fixed-variant">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">shield_person</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+            Mode Anonim Aktif
+          </span>
+<span class="font-label-md text-label-md text-primary font-semibold">Tanpa Akun</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mt-1">
+          Tidak ada pendaftaran nama, surel, ataupun sandi. Semua data tersimpan lokal di perangkat ini demi privasi penuh.
+        </p>
+</div>
+</div>
+</section>
+<!-- Section 1: Tersimpan (Saved Collection) -->
+<section class="px-margin py-space-sm flex flex-col gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+<h3 class="font-title-md text-title-md text-on-surface">Tersimpan</h3>
+</div>
+<span class="font-label-md text-label-md px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant" id="saved-counter">4 Materi</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mt-0.5">
+        Kumpulan panduan dan informasi yang kamu simpan untuk dibuka kembali kapan saja.
+      </p>
+</div>
+<!-- Filter Chips -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 -mx-margin px-margin scrollbar-none">
+<button class="filter-tab px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-primary text-on-primary shadow-sm whitespace-nowrap transition-all" data-filter="all" type="button">
+        Semua
+      </button>
+<button class="filter-tab px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface whitespace-nowrap transition-all" data-filter="panduan" type="button">
+        Panduan
+      </button>
+<button class="filter-tab px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface whitespace-nowrap transition-all" data-filter="edukasi" type="button">
+        Informasi &amp; Hak
+      </button>
+<button class="filter-tab px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface whitespace-nowrap transition-all" data-filter="layanan" type="button">
+        Layanan
+      </button>
+<button class="filter-tab px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface whitespace-nowrap transition-all" data-filter="faq" type="button">
+        Tanya Jawab
+      </button>
+</div>
+<!-- Saved Items Cards List -->
+<div class="flex flex-col gap-space-md" id="saved-list">
+<!-- Card 1: Panduan -->
+<article class="saved-item bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm transition-all" data-category="panduan">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px] text-tertiary">check_circle</span>
+              Panduan (Layar 07)
+            </span>
+<span class="font-caption text-caption text-on-surface-variant">Disimpan 2 hari lalu</span>
+</div>
+<button aria-label="Lepas Penanda" class="bookmark-btn text-tertiary hover:opacity-80 transition-opacity p-1" type="button">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</button>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">Panduan Langkah Awal — Kebutuhan Bantuan Hukum</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 line-clamp-2">
+            Urutan langkah aman mempersiapkan dokumen penting, catatan kronologi kejadian, dan menjaga rekam bukti digital.
+          </p>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-caption text-caption text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+            Tersimpan Offline
+          </span>
+<a aria-label="Buka Panduan Langkah Awal" class="h-10 px-space-md rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg inline-flex items-center gap-space-xs shadow-sm active:scale-95 transition-transform" href="#">
+<span>Buka Panduan (Screen 07)</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Card 2: Edukasi Hak -->
+<article class="saved-item bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm transition-all" data-category="edukasi">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px] text-tertiary">gavel</span>
+              Kenali Hakmu (Layar 13)
+            </span>
+<span class="font-caption text-caption text-on-surface-variant">Disimpan kemarin</span>
+</div>
+<button aria-label="Lepas Penanda" class="bookmark-btn text-tertiary hover:opacity-80 transition-opacity p-1" type="button">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</button>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">5 Hak Dasar Utama Korban Kekerasan</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 line-clamp-2">
+            Jaminan hak atas penanganan medis darurat, kerahasiaan identitas saksi dan korban, perlindungan fisik, serta pemulihan psikologis.
+          </p>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-caption text-caption text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+            UU TPKS Terverifikasi
+          </span>
+<a aria-label="Buka Hak Korban" class="h-10 px-space-md rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg inline-flex items-center gap-space-xs shadow-sm active:scale-95 transition-transform" href="#">
+<span>Buka Hak Korban (Screen 13)</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Card 3: Bantuan Hukum -->
+<article class="saved-item bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm transition-all" data-category="layanan">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px] text-tertiary">balance</span>
+              Bantuan Hukum (Layar 12)
+            </span>
+<span class="font-caption text-caption text-on-surface-variant">Disimpan minggu ini</span>
+</div>
+<button aria-label="Lepas Penanda" class="bookmark-btn text-tertiary hover:opacity-80 transition-opacity p-1" type="button">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</button>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">Bentuk Pendampingan Hukum &amp; Pro Bono</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 line-clamp-2">
+            Informasi akses advokat cuma-cuma dari LBH Apik dan jejaring organisasi bantuan hukum tanpa biaya administrasi.
+          </p>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-caption text-caption text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">health_and_safety</span>
+            Bebas Biaya
+          </span>
+<a aria-label="Buka Informasi Bantuan Hukum" class="h-10 px-space-md rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg inline-flex items-center gap-space-xs shadow-sm active:scale-95 transition-transform" href="#">
+<span>Buka Informasi (Screen 12)</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Card 4: Tanya Jawab Privasi -->
+<article class="saved-item bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm transition-all" data-category="faq">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px] text-tertiary">quiz</span>
+              FAQ (Layar 14)
+            </span>
+<span class="font-caption text-caption text-on-surface-variant">Disimpan minggu ini</span>
+</div>
+<button aria-label="Lepas Penanda" class="bookmark-btn text-tertiary hover:opacity-80 transition-opacity p-1" type="button">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</button>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">Jawaban Seputar Privasi &amp; Tanpa Pelacakan</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 line-clamp-2">
+            Penjelasan mengenai tidak adanya cookie pihak ketiga, cara membersihkan rekaman riwayat di peramban, serta protokol darurat.
+          </p>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-caption text-caption text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">lock_reset</span>
+            Panduan Aman
+          </span>
+<a aria-label="Buka FAQ Privasi" class="h-10 px-space-md rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg inline-flex items-center gap-space-xs shadow-sm active:scale-95 transition-transform" href="#">
+<span>Buka FAQ (Screen 14)</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Dynamic Empty State (Hidden initially) -->
+<div class="hidden bg-surface-container-low rounded-xl p-space-xl text-center flex-col items-center justify-center gap-space-sm" id="saved-empty-state">
+<div class="w-14 h-14 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[28px]">bookmark_border</span>
+</div>
+<div class="flex flex-col gap-1 max-w-[280px]">
+<h4 class="font-title-md text-title-md text-on-surface">Belum Ada Item Tersimpan</h4>
+<p class="font-caption text-caption text-on-surface-variant">
+            Tekan ikon penanda saat membaca materi di layar mana pun agar muncul di daftar ini.
+          </p>
+</div>
+</div>
+</div>
+<!-- Reassuring Bookmark Helper Note -->
+<div class="bg-surface-container-low/70 rounded-xl p-space-md flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">tips_and_updates</span>
+<p class="font-caption text-caption text-on-surface-variant">
+        Informasi yang kamu simpan dengan menekan ikon penanda akan otomatis tersimpan di sini agar mudah ditemukan kembali tanpa sambungan internet.
+      </p>
+</div>
+</section>
+<!-- Section 2: Pengaturan Privasi -->
+<section class="px-margin pt-space-lg pb-space-sm flex flex-col gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">security</span>
+<h3 class="font-title-md text-title-md text-on-surface">Pengaturan Privasi</h3>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mt-0.5">
+        Kamu dapat meninjau pilihan penggunaan dan fitur privasi yang tersedia di perangkat ini.
+      </p>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Setting Card 1: Quick Exit Explanation -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">logout</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface">Tombol Keluar Cepat</h4>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md shrink-0">
+            Selalu Aktif (Layar 02–15)
+          </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+          Satu ketukan di kanan atas langsung beralih ke halaman netral tanpa konfirmasi dan tanpa menghapus data atau progresmu.
+        </p>
+</div>
+<!-- Setting Card 2: PIN Protection (Optional) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">pin</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface">Kunci PIN Tambahan</h4>
+</div>
+<!-- Toggle switch UI -->
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input class="sr-only peer" id="pin-toggle" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-on-primary after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-surface-variant after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Bila diaktifkan, kamu perlu memasukkan PIN sebelum konten Ruang Aman dibuka kembali dari halaman netral.
+        </p>
+<div class="pt-space-xs flex items-center justify-between" id="pin-action-container">
+<span class="font-label-md text-label-md text-on-surface-variant" id="pin-status-text">Opsional (Tidak Aktif)</span>
+<button class="h-9 px-space-md rounded-xl bg-surface-container text-primary font-label-md text-label-md flex items-center gap-1 hover:bg-surface-container-high transition-colors" id="pin-modal-btn" type="button">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+<span>Atur PIN Baru</span>
+</button>
+</div>
+</div>
+<!-- Setting Card 3: App Switcher Shielding -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[18px]">blur_on</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface">Penutup Layar App Switcher</h4>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+            Aktif Otomatis
+          </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+          Cuplikan aplikasi otomatis disamarkan saat berpindah antar-aplikasi agar layar tidak terlihat orang lain di sekitarmu.
+        </p>
+</div>
+</div>
+</section>
+<!-- Section 3: Pengelolaan Data di Perangkat -->
+<section class="px-margin pt-space-lg pb-space-sm flex flex-col gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">delete_sweep</span>
+<h3 class="font-title-md text-title-md text-on-surface">Pengelolaan Data di Perangkat</h3>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mt-0.5">
+        Semua catatan disimpan hanya di memori internal peramban ini.
+      </p>
+</div>
+<!-- Clear Local Data Card (Warning amber/red styling) -->
+<div class="bg-error-container/40 rounded-xl p-space-md flex flex-col gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-error/10 text-error flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">warning</span>
+</div>
+<div class="flex-1 min-w-0">
+<h4 class="font-label-lg text-label-lg text-on-surface">Hapus Riwayat di Perangkat</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+            Menghapus checklist panduan dan seluruh daftar item tersimpan dari perangkat ini. Tindakan ini tidak dapat dibatalkan.
+          </p>
+</div>
+</div>
+<div class="pt-space-xs flex justify-end">
+<button class="h-11 px-space-md rounded-xl bg-error text-on-error font-label-lg text-label-lg flex items-center gap-space-xs shadow-sm hover:opacity-95 active:scale-95 transition-all" id="open-delete-modal" type="button">
+<span class="material-symbols-outlined text-[18px]">delete_forever</span>
+<span>Hapus Seluruh Data Perangkat</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Section 4: Compact About / Reassurance -->
+<section class="px-margin pt-space-lg pb-space-xl flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm text-center items-center">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary mb-1">
+<span class="material-symbols-outlined text-[24px]">spa</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">Ruang Aman <span class="font-caption text-caption text-on-surface-variant font-normal">v1.0</span></h4>
+<p class="font-caption text-caption text-on-surface-variant mt-1 max-w-[280px]">
+          Tempat tenang untuk mencari langkah dan bantuan secara mandiri dan aman.
+        </p>
+</div>
+<!-- Quick Action Navigation Links -->
+<div class="w-full grid grid-cols-1 gap-space-xs pt-space-xs">
+<a aria-label="Buka FAQ &amp; Bantuan Penggunaan" class="h-11 px-space-md rounded-xl bg-surface-container text-primary font-label-md text-label-md flex items-center justify-between hover:bg-surface-container-high transition-colors" href="#">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">help_center</span>
+<span>Buka FAQ &amp; Bantuan Penggunaan (Screen 14)</span>
+</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+<a aria-label="Kembali ke Beranda" class="h-11 px-space-md rounded-xl bg-surface-container text-primary font-label-md text-label-md flex items-center justify-between hover:bg-surface-container-high transition-colors" href="#">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">home</span>
+<span>Kembali ke Beranda (Screen 04)</span>
+</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Confirmation Modal for Delete Data (Dialog Backdrop) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden items-center justify-center p-margin" id="delete-modal">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg w-full max-w-[340px] shadow-xl flex flex-col gap-space-md">
+<div class="w-12 h-12 rounded-full bg-error-container text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">delete_forever</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">Konfirmasi Hapus Data?</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+          Daftar 4 item tersimpan dan riwayat checklist di perangkat ini akan segera dibersihkan seluruhnya.
+        </p>
+</div>
+<div class="flex items-center gap-space-xs justify-end pt-space-xs">
+<button class="h-11 px-space-md rounded-xl bg-surface-container text-on-surface font-label-md text-label-md" id="cancel-delete-btn" type="button">
+          Batal
+        </button>
+<button class="h-11 px-space-md rounded-xl bg-error text-on-error font-label-md text-label-md flex items-center gap-1 shadow-sm" id="confirm-delete-btn" type="button">
+<span>Ya, Bersihkan</span>
+</button>
+</div>
+</div>
+</div>
+<!-- PIN Setup Micro-Modal -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden items-center justify-center p-margin" id="pin-modal">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg w-full max-w-[340px] shadow-xl flex flex-col gap-space-md">
+<div class="w-12 h-12 rounded-full bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">key</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">Atur 4 Digit PIN</h4>
+<p class="font-caption text-caption text-on-surface-variant mt-1">
+          PIN ini hanya tersimpan di memori perangkat ini untuk melindungi privasimu saat membuka kembali aplikasi.
+        </p>
+</div>
+<div class="flex justify-center gap-space-xs py-space-xs">
+<input class="pin-digit w-11 h-12 text-center text-title-md font-title-md bg-surface-container rounded-lg text-on-surface focus:outline-none focus:bg-surface-container-high" maxlength="1" type="password"/>
+<input class="pin-digit w-11 h-12 text-center text-title-md font-title-md bg-surface-container rounded-lg text-on-surface focus:outline-none focus:bg-surface-container-high" maxlength="1" type="password"/>
+<input class="pin-digit w-11 h-12 text-center text-title-md font-title-md bg-surface-container rounded-lg text-on-surface focus:outline-none focus:bg-surface-container-high" maxlength="1" type="password"/>
+<input class="pin-digit w-11 h-12 text-center text-title-md font-title-md bg-surface-container rounded-lg text-on-surface focus:outline-none focus:bg-surface-container-high" maxlength="1" type="password"/>
+</div>
+<div class="flex items-center gap-space-xs justify-end">
+<button class="h-10 px-space-md rounded-xl bg-surface-container text-on-surface font-label-md text-label-md" id="cancel-pin-btn" type="button">
+          Batal
+        </button>
+<button class="h-10 px-space-md rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-sm" id="save-pin-btn" type="button">
+          Simpan PIN
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function () {
+    // 1. Highlight Active Bottom Navigation Tab (Profil - Screen 15)
+    const navProfil = document.querySelector('nav a[data-path="profil"]');
+    if (navProfil) {
+      document.querySelectorAll('nav a').forEach((el) => {
+        el.classList.remove('text-primary', 'font-bold');
+        el.classList.add('text-on-surface-variant');
+      });
+      navProfil.classList.remove('text-on-surface-variant');
+      navProfil.classList.add('text-primary');
+      const icon = navProfil.querySelector('.material-symbols-outlined');
+      if (icon) {
+        icon.style.fontVariationSettings = "'FILL' 1";
+      }
+    }
+
+    // 2. Tab Filter Interaction
+    const filterTabs = document.querySelectorAll('.filter-tab');
+    const savedItems = document.querySelectorAll('.saved-item');
+    const emptyState = document.getElementById('saved-empty-state');
+    const counterText = document.getElementById('saved-counter');
+
+    filterTabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        filterTabs.forEach((t) => {
+          t.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+          t.classList.add('bg-surface-container', 'text-on-surface-variant');
+        });
+        tab.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        tab.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+
+        const cat = tab.getAttribute('data-filter');
+        let visibleCount = 0;
+
+        savedItems.forEach((item) => {
+          if (cat === 'all' || item.getAttribute('data-category') === cat) {
+            item.style.display = 'flex';
+            visibleCount++;
+          } else {
+            item.style.display = 'none';
+          }
+        });
+
+        if (visibleCount === 0) {
+          emptyState.classList.remove('hidden');
+          emptyState.classList.add('flex');
+        } else {
+          emptyState.classList.add('hidden');
+          emptyState.classList.remove('flex');
+        }
+
+        if (counterText) {
+          counterText.textContent = visibleCount + ' Materi';
+        }
+      });
+    });
+
+    // 3. Remove Bookmark Micro-Interaction
+    document.querySelectorAll('.bookmark-btn').forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const card = btn.closest('.saved-item');
+        if (card) {
+          card.style.opacity = '0';
+          card.style.transform = 'scale(0.95)';
+          setTimeout(() => {
+            card.remove();
+            const remaining = document.querySelectorAll('.saved-item').length;
+            if (counterText) counterText.textContent = remaining + ' Materi';
+            if (remaining === 0 && emptyState) {
+              emptyState.classList.remove('hidden');
+              emptyState.classList.add('flex');
+            }
+          }, 200);
+        }
+      });
+    });
+
+    // 4. PIN Protection Controls & Micro-modal
+    const pinToggle = document.getElementById('pin-toggle');
+    const pinStatusText = document.getElementById('pin-status-text');
+    const pinModalBtn = document.getElementById('pin-modal-btn');
+    const pinModal = document.getElementById('pin-modal');
+    const cancelPinBtn = document.getElementById('cancel-pin-btn');
+    const savePinBtn = document.getElementById('save-pin-btn');
+    const pinDigits = document.querySelectorAll('.pin-digit');
+
+    if (pinToggle && pinStatusText) {
+      pinToggle.addEventListener('change', () => {
+        if (pinToggle.checked) {
+          pinModal.classList.remove('hidden');
+          pinModal.classList.add('flex');
+          if (pinDigits[0]) pinDigits[0].focus();
+        } else {
+          pinStatusText.textContent = 'Opsional (Tidak Aktif)';
+          pinStatusText.classList.remove('text-tertiary', 'font-semibold');
+          pinStatusText.classList.add('text-on-surface-variant');
+        }
+      });
+    }
+
+    if (pinModalBtn) {
+      pinModalBtn.addEventListener('click', () => {
+        pinModal.classList.remove('hidden');
+        pinModal.classList.add('flex');
+        if (pinDigits[0]) pinDigits[0].focus();
+      });
+    }
+
+    if (cancelPinBtn) {
+      cancelPinBtn.addEventListener('click', () => {
+        pinModal.classList.add('hidden');
+        pinModal.classList.remove('flex');
+        if (pinStatusText.textContent.includes('Tidak Aktif')) {
+          pinToggle.checked = false;
+        }
+      });
+    }
+
+    // Auto-advance PIN inputs
+    pinDigits.forEach((digitInput, index) => {
+      digitInput.addEventListener('input', (e) => {
+        if (digitInput.value.length === 1 && index < pinDigits.length - 1) {
+          pinDigits[index + 1].focus();
+        }
+      });
+      digitInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Backspace' && !digitInput.value && index > 0) {
+          pinDigits[index - 1].focus();
+        }
+      });
+    });
+
+    if (savePinBtn) {
+      savePinBtn.addEventListener('click', () => {
+        pinModal.classList.add('hidden');
+        pinModal.classList.remove('flex');
+        pinToggle.checked = true;
+        pinStatusText.textContent = 'Aktif (4-Digit Tersimpan)';
+        pinStatusText.classList.remove('text-on-surface-variant');
+        pinStatusText.classList.add('text-tertiary', 'font-semibold');
+      });
+    }
+
+    // 5. Delete Local Data Dialog Interaction
+    const openDeleteBtn = document.getElementById('open-delete-modal');
+    const deleteModal = document.getElementById('delete-modal');
+    const cancelDeleteBtn = document.getElementById('cancel-delete-btn');
+    const confirmDeleteBtn = document.getElementById('confirm-delete-btn');
+
+    if (openDeleteBtn && deleteModal) {
+      openDeleteBtn.addEventListener('click', () => {
+        deleteModal.classList.remove('hidden');
+        deleteModal.classList.add('flex');
+      });
+    }
+
+    if (cancelDeleteBtn && deleteModal) {
+      cancelDeleteBtn.addEventListener('click', () => {
+        deleteModal.classList.add('hidden');
+        deleteModal.classList.remove('flex');
+      });
+    }
+
+    if (confirmDeleteBtn && deleteModal) {
+      confirmDeleteBtn.addEventListener('click', () => {
+        deleteModal.classList.add('hidden');
+        deleteModal.classList.remove('flex');
+        savedItems.forEach((item) => item.remove());
+        if (emptyState) {
+          emptyState.classList.remove('hidden');
+          emptyState.classList.add('flex');
+        }
+        if (counterText) counterText.textContent = '0 Materi';
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] h-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="beranda" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-caption text-caption">Beranda</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] h-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="bantuan" href="#"><span class="material-symbols-outlined text-[24px]">support_agent</span><span class="font-caption text-caption">Bantuan</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] h-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="layanan" href="#"><span class="material-symbols-outlined text-[24px]">local_hospital</span><span class="font-caption text-caption">Layanan</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] h-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="profil" href="#"><span class="material-symbols-outlined text-[24px]">account_circle</span><span class="font-caption text-caption">Profil</span></a></div></nav></body></html>
